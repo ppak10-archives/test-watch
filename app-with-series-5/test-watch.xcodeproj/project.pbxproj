@@ -19,13 +19,16 @@
 		6E0BDA7923308DA4007DB03E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BDA7723308DA4007DB03E /* Interface.storyboard */; };
 		6E0BDA7B23308DA5007DB03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BDA7A23308DA5007DB03E /* Assets.xcassets */; };
 		6E0BDA8223308DA5007DB03E /* test-watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6E0BDA8123308DA5007DB03E /* test-watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6E0BDA8723308DA5007DB03E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDA8623308DA5007DB03E /* ContentView.swift */; };
 		6E0BDA8923308DA5007DB03E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDA8823308DA5007DB03E /* HostingController.swift */; };
 		6E0BDA8B23308DA5007DB03E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDA8A23308DA5007DB03E /* ExtensionDelegate.swift */; };
 		6E0BDA8D23308DA5007DB03E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDA8C23308DA5007DB03E /* NotificationController.swift */; };
 		6E0BDA8F23308DA5007DB03E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDA8E23308DA5007DB03E /* NotificationView.swift */; };
 		6E0BDA9123308DA5007DB03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BDA9023308DA5007DB03E /* Assets.xcassets */; };
 		6E0BDA9423308DA5007DB03E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BDA9323308DA5007DB03E /* Preview Assets.xcassets */; };
+		6E0BDAAB23308F9B007DB03E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDAAA23308F9B007DB03E /* InterfaceController.swift */; };
+		6E0BDAAD233090B8007DB03E /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BDAAC233090B8007DB03E /* RowController.swift */; };
+		6E0F5686233095CF00A71EFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F5685233095CE00A71EFE /* ContentView.swift */; };
+		6E0F5688233098B000A71EFE /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F5687233098B000A71EFE /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +107,6 @@
 		6E0BDA7A23308DA5007DB03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E0BDA7C23308DA5007DB03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0BDA8123308DA5007DB03E /* test-watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "test-watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E0BDA8623308DA5007DB03E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E0BDA8823308DA5007DB03E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		6E0BDA8A23308DA5007DB03E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		6E0BDA8C23308DA5007DB03E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,10 @@
 		6E0BDA9323308DA5007DB03E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E0BDA9523308DA5007DB03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0BDA9623308DA5007DB03E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6E0BDAAA23308F9B007DB03E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6E0BDAAC233090B8007DB03E /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		6E0F5685233095CE00A71EFE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E0F5687233098B000A71EFE /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +230,7 @@
 		6E0BDA8523308DA5007DB03E /* test-watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				6E0BDA8623308DA5007DB03E /* ContentView.swift */,
+				6E0F5685233095CE00A71EFE /* ContentView.swift */,
 				6E0BDA8823308DA5007DB03E /* HostingController.swift */,
 				6E0BDA8A23308DA5007DB03E /* ExtensionDelegate.swift */,
 				6E0BDA8C23308DA5007DB03E /* NotificationController.swift */,
@@ -233,6 +239,9 @@
 				6E0BDA9523308DA5007DB03E /* Info.plist */,
 				6E0BDA9623308DA5007DB03E /* PushNotificationPayload.apns */,
 				6E0BDA9223308DA5007DB03E /* Preview Content */,
+				6E0BDAAA23308F9B007DB03E /* InterfaceController.swift */,
+				6E0BDAAC233090B8007DB03E /* RowController.swift */,
+				6E0F5687233098B000A71EFE /* DetailInterfaceController.swift */,
 			);
 			path = "test-watch WatchKit Extension";
 			sourceTree = "<group>";
@@ -465,9 +474,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0BDA8923308DA5007DB03E /* HostingController.swift in Sources */,
-				6E0BDA8723308DA5007DB03E /* ContentView.swift in Sources */,
 				6E0BDA8D23308DA5007DB03E /* NotificationController.swift in Sources */,
+				6E0F5688233098B000A71EFE /* DetailInterfaceController.swift in Sources */,
+				6E0F5686233095CF00A71EFE /* ContentView.swift in Sources */,
+				6E0BDAAB23308F9B007DB03E /* InterfaceController.swift in Sources */,
 				6E0BDA8B23308DA5007DB03E /* ExtensionDelegate.swift in Sources */,
+				6E0BDAAD233090B8007DB03E /* RowController.swift in Sources */,
 				6E0BDA8F23308DA5007DB03E /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

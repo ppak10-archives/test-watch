@@ -15,3 +15,9 @@ class HostingController: WKHostingController<ContentView> {
         return ContentView()
     }
 }
+
+//class HostingController: WKHostingController<InterfaceController> {
+//    override var body: InterfaceController {
+//        return InterfaceController()
+//    }
+//}
