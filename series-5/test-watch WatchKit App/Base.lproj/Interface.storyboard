@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14868" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mXe-9d-JfJ">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14643"/>
+    </dependencies>
+    <scenes>
+        <!--Hosting Controller-->
+        <scene sceneID="RUd-og-cv4">
+            <objects>
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="test_watch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="141"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="187" y="462"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="test_watch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="462"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="gu5-yi-gc3">
+            <objects>
+                <controller id="mXe-9d-JfJ" customClass="InterfaceController" customModule="test_watch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="eds-wT-C5a">
+                            <items>
+                                <tableRow identifier="RowController" id="JrM-jS-thj" customClass="RowController" customModule="test_watch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="JQ0-VN-Ezl">
+                                        <items>
+                                            <label width="136" height="55" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="aeh-yd-yd4"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="aeh-yd-yd4" id="2eD-T6-Rdo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="eds-wT-C5a" id="Alx-Ea-WP1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="187" y="-201"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="GrK-QG-daD">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="oz1-tI-blr" customClass="DetailInterfaceController" customModule="test_watch_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="190" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="aJZ-NN-7d8"/>
+                    </items>
+                    <connections>
+                        <outlet property="detailLabel" destination="aJZ-NN-7d8" id="qiY-wS-KxN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="488" y="-201"/>
+        </scene>
+    </scenes>
+</document>
