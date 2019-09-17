@@ -7,13 +7,17 @@
 //
 
 import WatchKit
-import SwiftUI
+import Foundation
 import UserNotifications
 
-class NotificationController: WKUserNotificationHostingController<NotificationView> {
 
-    override var body: NotificationView {
-        return NotificationView()
+class NotificationController: WKUserNotificationInterfaceController {
+
+    override init() {
+        // Initialize variables here.
+        super.init()
+        
+        // Configure interface objects here.
     }
 
     override func willActivate() {
